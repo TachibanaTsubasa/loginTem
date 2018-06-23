@@ -2,56 +2,94 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     <title>图书管理系统</title>
 </head>
+<style>
+    @media (min-width: @screen-md-min) { body { padding-top: 70px; } }
+    
+</style>
 <body>
-    <!--手机导航栏-->
-    <div id="mobile-menu" class="mobile-nav visible-xs visible-sm">
-        <ul>
-            <li>
-                <a href="#">首页</a>
-            </li>
-            <li>
-                <a href="#">Java</a>
-            </li>
-            <li>
-                <a href="#">SVN</a>
-            </li>
-            <li>
-                <a href="#">iOS</a>
-            </li>
-        </ul>
-    </div>
-    <!--pc导航栏-->
-    <nav class="navbar-inverse visible-lg visible-md" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">菜鸟教程</a>
-            </div>
-            <div>
+        <nav id="myNav" class="navbar navbar-inverse visible-md-block visible-lg-block">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" herf="#">图书管理系统</a>
+                    </div>
                 <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="#">iOS</a>
-                    </li>
-                    <li>
-                        <a href="#">SVN</a>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Java</a>
-                    </li>
+                    <li class="active"><a herf="#">登录</a></li>
+                    <li><a herf="#">借阅</a></li>
                 </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!--手机导航栏侧滑-->
-    <div class="nav-btn visible-xs visible-sm">
-        <a href="#" class="mobile-nav-taggle" id="mobile-nav-taggle">
-            <span class="glyphicon glyphicon-align-justify"></span>
-        </a>
+        </nav>
+
+        <nav id="myNav" class="navbar navbar-inverse navbar-fixed-top visible-xs-block visible-sm-block">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" herf="#">图书管理系统</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a herf="#">登录</a>
+                        </li>
+                        <li>
+                            <a herf="#">借阅</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container theme-showcase">
+        <h1>term1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+        dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+        varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+        Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+        quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        <h1>term2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+        dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+        varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+        Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+        quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        <h1>term3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+        dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+        varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+        Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+        quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        <h1>term4</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+            dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+            varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+            Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+            quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        <h1>term5</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+            dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+            varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+            Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+            quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        <h1>term6</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+            dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+            varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+            Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+            quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        <h1>term7</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
+            dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
+            varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
+            Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
+            quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
     </div>
 </body>
 </html>
