@@ -24,6 +24,7 @@ func MainHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	http.HandleFunc("/", MainHandler)
 	err := http.ListenAndServe(":7777", nil)
 	if err != nil {
