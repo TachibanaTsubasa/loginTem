@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./styles.less"/>
-    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    <title>图书管理系统</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" media="screen" href="./static/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>    
+<title>图书管理系统</title>
 </head>
 <body>
-        <nav id="myNav" class="navbar navbar-inverse visible-md-block visible-lg-block">
+        <nav class="navbar navbar-inverse visible-md-block visible-lg-block" role="navigation">
             <div class="container">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" herf="#">图书管理系统</a>
+                        <a class="navbar-brand" href="#">图书管理系统</a>
                     </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a herf="#">登录</a></li>
-                    <li><a herf="#">借阅</a></li>
+                    <li class="active"><a href="#">登录</a></li>
+                    <li><a href="#">借阅</a></li>
                 </ul>
                 <p class="navbar-right navbar-text">为桌面设备设计</p>
             </div>
         </div>
     </nav>
     
-    <nav id="myNav" class="navbar navbar-inverse navbar-fixed-top visible-xs-block visible-sm-block">
+    <nav class="navbar navbar-inverse navbar-fixed-top visible-xs-block visible-sm-block" role="navigation">
         <div class="container">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" herf="#">图书管理系统</a>
+                    <a class="navbar-brand" href="#">图书管理系统</a>
                 </div>
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a herf="#">登录</a>
+                        <a href="#">登录</a>
                     </li>
                     <li>
-                        <a herf="#">借阅</a>
+                        <a href="#">借阅</a>
                         </li>
                     </ul>
                      <p class="navbar-right navbar-text">为移动设备设计</p>
@@ -57,8 +54,14 @@
 <div class="row">
 <form class="form-signin col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
     <h2 class="form-signin-heading">登录</h2> 
-    <input type="name" id="inputName" class="form-control" placeholder="用户名" required autofocus>   
-    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+    <div class="input-group">
+        <span class="input-group-addon glyphicon glyphicon-user"></span>
+        <input type="name" id="inputName" class="form-control" placeholder="用户名" required autofocus>   
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon glyphicon glyphicon-th"></span>
+        <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+    </div>
     <div class="checkbox">
         <label>
             <input type="checkbox" value="remember-me"> 记住我</input>
@@ -68,7 +71,10 @@
 </form>
 
 </div>
-        
+        <h3 class="text-center" style="color:gray">
+            自豪地采用
+            <a href="http://glyphicons.com/">Glyphicon Halflings</a>
+            字体图标</h3>
         <h1>term1</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus,
         dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse
@@ -111,6 +117,6 @@
             varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam.
             Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet
             quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
-    </div>
+            </div>
 </body>
 </html>
