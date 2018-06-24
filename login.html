@@ -24,31 +24,37 @@
             </div>
         </div>
     </nav>
-    
-    <nav class="navbar navbar-inverse navbar-fixed-top visible-xs-block visible-sm-block" role="navigation">
+    <nav class="navbar navbar-fixed-top navbar-inverse visible-xs-block visible-sm-block">
         <div class="container">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">图书管理系统</a>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">图书管理系统</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="#">登录</a>
+                        <a href="/login">登录</a>
                     </li>
                     <li>
-                        <a href="#">借阅</a>
-                        </li>
-                    </ul>
-                     <p class="navbar-right navbar-text">为移动设备设计</p>
-                </div>
+                        <a href="/search">借阅</a>
+                    </li>
+                    <li>
+                        <a href="/test">测试</a>
+                    </li>
+                </ul>
+                <p class="navbar-right navbar-text">为移动设备设计</p>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <div class="container theme-showcase">
-        <div class="row visible-xs-block">
-            <br><br><br><br><br><br><br><br><br>
-        </div>
-        <div class="row visible-sm-block">
+        <div class="row visible-sm-block visible-xs-block">
             <br><br>
         </div>
 <div class="row">

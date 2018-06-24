@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="./static/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <title>图书管理系统</title>
+</head>
+<style>
+    #grid {
+    height:25%;
+    font-size: 3em;
+    background-color:gray; 
+    border:5px solid black;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-inverse visible-md-block visible-lg-block" role="navigation">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">图书管理系统</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/login">登录</a>
+                    </li>
+                    <li>
+                        <a href="/search">借阅</a>
+                    </li>
+                    <li class="active">
+                        <a href="/test">测试</a>
+                    </li>
+                </ul>
+                <p class="navbar-right navbar-text">为桌面设备设计</p>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-fixed-top navbar-inverse visible-xs-block visible-sm-block">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">图书管理系统</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">借阅</a>
+                    </li>
+                </ul>
+                <p class="navbar-right navbar-text">为移动设备设计</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container theme-showcase">
+        <div class="row visible-sm-block visible-xs-block">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+                <div id="grid" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">block1</div>
+                <div id="grid" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">block2</div>
+                <div id="grid" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">block3</div>
+                <div id="grid" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">block4</div>
+                <div id="grid" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">block5</div>
+                <div id="grid" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">block6</div>
+            </div>
+
+        </div>
+        <h3 class="text-center" style="color:gray">
+            自豪地采用
+            <a href="http://glyphicons.com/">Glyphicon Halflings</a>
+            字体图标</h3>
+
+
+    </div>
+</body>
+
+</html>
